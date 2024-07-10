@@ -18,8 +18,6 @@ export const SET_IS_LOADING = 'SET_IS_LOADING'
 
 const initialState = {
   toys: [],
-  isCartShown: false,
-  shoppingCart: [],
   isLoading: false,
   filterBy: toyService.getDefaultFilter(),
   lastToys: [],

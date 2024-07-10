@@ -5,8 +5,6 @@ import { UserMsg } from './UserMsg.jsx'
 
 import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service.js'
 
-import { TOGGLE_CART_IS_SHOWN } from '../store/reducers/toy.reducer.js'
-
 export function AppHeader() {
   return (
     <header className='app-header full main-layout'>
@@ -16,9 +14,6 @@ export function AppHeader() {
           <NavLink to='/'>Home</NavLink>
 
           <NavLink to='/toy'>Toys</NavLink>
-          <a onClick={onToggleCart} href='#'>
-            🛒 Cart
-          </a>
         </nav>
       </section>
 

@@ -1,6 +1,6 @@
 import { ToyPreview } from './ToyPreview.jsx'
 
-export function ToyList({ toys, onRemoveToy, onEditToy, addToCart }) {
+export function ToyList({ toys, onRemoveToy, onEditToy }) {
   console.log('Render')
   return (
     <ul className='toy-list'>

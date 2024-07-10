@@ -13,7 +13,6 @@ import {
   saveToy,
   setFilterBy,
 } from '../store/actions/toy.actions.js'
-import { ADD_TOY_TO_TOYT } from '../store/reducers/toy.reducer.js'
 
 export function ToyIndex() {
   const dispatch = useDispatch()

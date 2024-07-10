@@ -17,7 +17,7 @@ export const toyService = {
 }
 
 function query(filterBy = {}) {
-  storageService.query(STORAGE_KEY).then((toys) => {
+  return storageService.query(STORAGE_KEY).then((toys) => {
     toys = _filter(toys, filterBy)
     return toys
   })

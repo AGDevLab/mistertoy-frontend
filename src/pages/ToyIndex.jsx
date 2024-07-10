@@ -6,6 +6,7 @@ import { ToyFilter } from '../cmps/ToyFilter.jsx'
 import { ToyList } from '../cmps/ToyList.jsx'
 import { toyService } from '../services/toy.service.js'
 import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
+
 import {
   loadToys,
   removeToy,
@@ -15,7 +16,7 @@ import {
 } from '../store/actions/toy.actions.js'
 
 export function ToyIndex() {
-  const dispatch = useDispatch()
+  // const dispatch = useDispatch()
   const toys = useSelector((storeState) => storeState.toyModule.toys)
   const filterBy = useSelector((storeState) => storeState.toyModule.filterBy)
   const isLoading = useSelector((storeState) => storeState.toyModule.isLoading)

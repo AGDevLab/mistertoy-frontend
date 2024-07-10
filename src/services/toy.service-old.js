@@ -18,7 +18,7 @@ function query(filterBy = {}) {
     if (!filterBy.price) filterBy.price = Infinity
     const regExp = new RegExp(filterBy.name, 'i')
     return toys.filter(
-      (toy) => regExp.test(toy.vendor) && toy.price <= filterBy.price
+      (toy) => regExp.test(toy.name) && toy.price <= filterBy.price
     )
   })
 }
@@ -50,8 +50,5 @@ function getEmptyToy() {
 }
 
 function getDefaultFilter() {
-  return { txt: '', maxPrice: '' }
+  return { name: '', price: '' }
 }
-
-// TEST DATA
-// storageService.post(STORAGE_KEY, {vendor: 'Subali Rahok 6', price: 980}).then(x => console.log(x))

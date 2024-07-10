@@ -1,17 +1,13 @@
 import { useDispatch, useSelector } from 'react-redux'
 
-import { UserMsg } from './UserMsg.jsx'
-
 export function AppFooter() {
-  const carsLength = useSelector(
-    (storeState) => storeState.carModule.toys.length
+  const toysLength = useSelector(
+    (storeState) => storeState.toyModule.toys.length
   )
 
   return (
     <footer className='app-footer'>
-      <h5>Currently {carsLength} toys in the shop</h5>
-
-      <UserMsg />
+      <h5>Currently {toysLength} toys in the shop</h5>
     </footer>
   )
 }

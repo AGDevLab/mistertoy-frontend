@@ -1,5 +1,9 @@
+import { Provider } from 'react-redux'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+
 import { AppHeader } from './cmps/AppHeader.jsx'
 import { AppFooter } from './cmps/AppFooter.jsx'
+import { UserMsg } from './cmps/UserMsg.jsx'
 
 import { HomePage } from './pages/HomePage.jsx'
 
@@ -28,6 +32,7 @@ export function App() {
           </main>
           <AppFooter />
         </section>
+        <UserMsg />
       </Router>
     </Provider>
   )

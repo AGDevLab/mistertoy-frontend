@@ -1,8 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux'
 import { NavLink } from 'react-router-dom'
 
-import { UserMsg } from './UserMsg.jsx'
-
 import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service.js'
 
 export function AppHeader() {
@@ -16,8 +14,6 @@ export function AppHeader() {
           <NavLink to='/toy'>Toys</NavLink>
         </nav>
       </section>
-
-      <UserMsg />
     </header>
   )
 }
